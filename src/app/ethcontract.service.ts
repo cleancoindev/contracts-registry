@@ -59,7 +59,7 @@ export class EthcontractService {
 
       const keysLength = await registryContract.methods.getKeysLength().call();
 
-      for (let i = 0; i < parseInt(keysLength); i++) {
+      for (let i = 0; i < parseInt(keysLength, 10); i++) {
         let individualCall;
 
         individualCall = {
@@ -76,7 +76,7 @@ export class EthcontractService {
 
       const returnedValues = response.results;
 
-      for (let i = 0; i < parseInt(keysLength); i++) {
+      for (let i = 0; i < parseInt(keysLength, 10); i++) {
         const contractDetail = new ContractDetail(
           i,
           returnedValues['KEY' + i],
@@ -92,7 +92,7 @@ export class EthcontractService {
 
 
     } catch (error) {
-      console.info(error);
+      console.log(error);
 
       return error;
     }

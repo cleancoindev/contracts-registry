@@ -46,9 +46,5 @@ Thumbs.db
 # Security suggestion
 package-lock.json
 
-# Build info
-/src/environments/build-info.ts
-.version
-
 #e2e
 /screenshots

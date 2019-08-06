@@ -28,7 +28,6 @@ jobs:
                 key: v2-dependencies-{{ checksum "package.json" }}
                 paths:
                     - node_modules
-
     # The lint job
     lint:
         working_directory: ~/project
@@ -74,10 +73,6 @@ jobs:
                 name: Build
                 command: npm run build
             
-            # Load version name
-            - run:
-                name: Reading version
-                command: VERSION="$(cat .version)"
             # Save uncompressed build
             - persist_to_workspace:
                 root: .
