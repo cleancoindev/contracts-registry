@@ -1,0 +1,5 @@
+table a:not(.btn),
+.table a:not(.btn) {
+     color: #0000CD;
+     text-decoration: underline;
+}
