@@ -12,7 +12,7 @@ export const environment = {
       address: 'https://ropsten.etherscan.io/address/',
       tx: 'https://ropsten.etherscan.io/tx/${tx}'
     },
-    provider: 'https://ropsten.infura.io/'
+    provider: 'https://ropsten.infura.io/v3/f6427a6723594cdd8affb596d357d268'
   },
   contracts: {
     registryContract: '0xeA940D4ea125Fb5274d35e9C835064655c0E0d53',
